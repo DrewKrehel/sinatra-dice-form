@@ -2,7 +2,7 @@
 
 <h2><%= "#{@outcome}" %></h2>
 <p>
-<a href="/process_roll?from=#{@num_dice}&to=#{@num_sides}">Roll again</a>
+<a href="/process_roll?dice=<%= @num_dice %>&sides=<%= @num_sides %>">Roll again</a>
 |
 <a href="/">Go back home.</a>
 </p>
