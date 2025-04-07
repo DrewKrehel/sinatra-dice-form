@@ -1,11 +1,12 @@
-<h1><%= @num_die1 %>d<%= @num_die2 %></h>
+<h1><%= @num_dice %>d<%= @num_sides %></h>
 
-<h2><%= "#{@outcome}" %></h2>
-<ul>
+<!--<h2><%#= "#{@outcome}" %></h2>-->
+
+<ol>
   <% @dice.each do |a_roll| %>
   <li>
-    <%= a_roll %>
+    Result: <%= a_roll %>
   </li>
 
   <% end %>
-</ul>
+</ol>
